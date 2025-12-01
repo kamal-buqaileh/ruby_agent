@@ -29,7 +29,7 @@ COPY . ./ruby_agent/
 RUN mkdir -p /app/output /root/.ruby_agent
 
 # Add /app to PYTHONPATH so Python can find the ruby_agent module
-ENV PYTHONPATH=/app:${PYTHONPATH}
+ENV PYTHONPATH=/app
 
 # Expose the default server port
 EXPOSE 8000
