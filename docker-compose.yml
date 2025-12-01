@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  ruby-agent:
+    build:
+      context: ..
+      dockerfile: ruby_agent/Dockerfile
+    container_name: ruby-agent
+    ports:
+      - "8000:8000"
+    volumes:
+      # Mount config directory to persist configuration
+      - ~/.ruby_agent:/root/.ruby_agent
+      # Mount output directory to persist results
+      - ./output:/app/output
+      # Mount workspace directory for projects (adjust path as needed)
+      # Example: mount your projects directory
+      - ~/workspace:/workspace:ro
+    environment:
+      - PYTHONUNBUFFERED=1
+      - DOCKER_CONTAINER=true
+    # Override command as needed
+    # For server mode: command: ["python", "-m", "ruby_agent.main", "--server", "--host", "0.0.0.0"]
+    # For setup: command: ["python", "-m", "ruby_agent.main", "--setup"]
+    # For analysis: command: ["python", "-m", "ruby_agent.main", "/workspace/project", "-o", "output/nodes.json"]
+

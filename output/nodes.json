@@ -1,0 +1,583 @@
+[
+  {
+    "label": "Api::V1::PartnersController",
+    "class_type": "class",
+    "file_path": "/Users/kamalbuqaileh/workspace/around_home/app/controllers/api/v1/partners_controller.rb",
+    "inheritance": "< ApplicationController",
+    "includes": [],
+    "namespaces": [
+      {
+        "name": "Api",
+        "order": 1
+      },
+      {
+        "name": "V1",
+        "order": 2
+      }
+    ],
+    "namespace_chain": [
+      "Api",
+      "V1",
+      "PartnersController"
+    ],
+    "methods": [
+      {
+        "name": "index",
+        "calls": [
+          {
+            "name": "Digest::MD5"
+          },
+          {
+            "name": "MatchPartnersService",
+            "file_path": "/Users/kamalbuqaileh/workspace/around_home/app/services/match_partners_service.rb"
+          },
+          {
+            "name": "PartnerSerializers::MatchSerializer",
+            "file_path": "/Users/kamalbuqaileh/workspace/around_home/app/serializers/partner_serializers/match_serializer.rb"
+          }
+        ],
+        "method_type": "instance",
+        "visibility": "public"
+      },
+      {
+        "name": "show",
+        "calls": [
+          {
+            "name": "Digest::MD5"
+          },
+          {
+            "name": "FetchPartnerDetailsService",
+            "file_path": "/Users/kamalbuqaileh/workspace/around_home/app/services/fetch_partner_details_service.rb"
+          },
+          {
+            "name": "PartnerSerializers::DetailSerializer",
+            "file_path": "/Users/kamalbuqaileh/workspace/around_home/app/serializers/partner_serializers/detail_serializer.rb"
+          }
+        ],
+        "method_type": "instance",
+        "visibility": "public"
+      },
+      {
+        "name": "partner_search_params",
+        "calls": [],
+        "method_type": "instance",
+        "visibility": "public"
+      }
+    ],
+    "id": "1",
+    "position": {
+      "x": 0,
+      "y": 150
+    },
+    "color": "#6ede87"
+  },
+  {
+    "label": "ApplicationController",
+    "class_type": "class",
+    "file_path": "/Users/kamalbuqaileh/workspace/around_home/app/controllers/application_controller.rb",
+    "inheritance": "< ActionController::API",
+    "includes": [],
+    "namespaces": [],
+    "namespace_chain": [
+      "ApplicationController"
+    ],
+    "methods": [],
+    "id": "2",
+    "position": {
+      "x": 0,
+      "y": 300
+    },
+    "color": "#6ede87"
+  },
+  {
+    "label": "ApplicationMailer",
+    "class_type": "class",
+    "file_path": "/Users/kamalbuqaileh/workspace/around_home/app/mailers/application_mailer.rb",
+    "inheritance": "< ActionMailer::Base",
+    "includes": [],
+    "namespaces": [],
+    "namespace_chain": [
+      "ApplicationMailer"
+    ],
+    "methods": [],
+    "id": "3",
+    "position": {
+      "x": 0,
+      "y": 450
+    },
+    "color": "#6ede87"
+  },
+  {
+    "label": "ApplicationRecord",
+    "class_type": "class",
+    "file_path": "/Users/kamalbuqaileh/workspace/around_home/app/models/application_record.rb",
+    "inheritance": "< ActiveRecord::Base",
+    "includes": [],
+    "namespaces": [],
+    "namespace_chain": [
+      "ApplicationRecord"
+    ],
+    "methods": [],
+    "id": "4",
+    "position": {
+      "x": 0,
+      "y": 600
+    },
+    "color": "#6ede87"
+  },
+  {
+    "label": "Material",
+    "class_type": "class",
+    "file_path": "/Users/kamalbuqaileh/workspace/around_home/app/models/material.rb",
+    "inheritance": "< ApplicationRecord",
+    "includes": [],
+    "namespaces": [],
+    "namespace_chain": [
+      "Material"
+    ],
+    "methods": [],
+    "id": "5",
+    "position": {
+      "x": 0,
+      "y": 750
+    },
+    "color": "#6ede87"
+  },
+  {
+    "label": "Partner",
+    "class_type": "class",
+    "file_path": "/Users/kamalbuqaileh/workspace/around_home/app/models/partner.rb",
+    "inheritance": "< ApplicationRecord",
+    "includes": [],
+    "namespaces": [],
+    "namespace_chain": [
+      "Partner"
+    ],
+    "methods": [],
+    "id": "6",
+    "position": {
+      "x": 0,
+      "y": 900
+    },
+    "color": "#6ede87"
+  },
+  {
+    "label": "PartnerService",
+    "class_type": "class",
+    "file_path": "/Users/kamalbuqaileh/workspace/around_home/app/models/partner_service.rb",
+    "inheritance": "< ApplicationRecord",
+    "includes": [],
+    "namespaces": [],
+    "namespace_chain": [
+      "PartnerService"
+    ],
+    "methods": [],
+    "id": "7",
+    "position": {
+      "x": 0,
+      "y": 1050
+    },
+    "color": "#6ede87"
+  },
+  {
+    "label": "Service",
+    "class_type": "class",
+    "file_path": "/Users/kamalbuqaileh/workspace/around_home/app/models/service.rb",
+    "inheritance": "< ApplicationRecord",
+    "includes": [],
+    "namespaces": [],
+    "namespace_chain": [
+      "Service"
+    ],
+    "methods": [],
+    "id": "8",
+    "position": {
+      "x": 0,
+      "y": 1200
+    },
+    "color": "#6ede87"
+  },
+  {
+    "label": "ServiceMaterial",
+    "class_type": "class",
+    "file_path": "/Users/kamalbuqaileh/workspace/around_home/app/models/service_material.rb",
+    "inheritance": "< ApplicationRecord",
+    "includes": [],
+    "namespaces": [],
+    "namespace_chain": [
+      "ServiceMaterial"
+    ],
+    "methods": [],
+    "id": "9",
+    "position": {
+      "x": 0,
+      "y": 1350
+    },
+    "color": "#6ede87"
+  },
+  {
+    "label": "PartnerQueries",
+    "class_type": "class",
+    "file_path": "/Users/kamalbuqaileh/workspace/around_home/app/queries/partner_queries.rb",
+    "inheritance": null,
+    "includes": [
+      "SlidingCache"
+    ],
+    "namespaces": [],
+    "namespace_chain": [
+      "PartnerQueries"
+    ],
+    "methods": [
+      {
+        "name": "partner_details",
+        "calls": [
+          {
+            "name": "Partner",
+            "file_path": "/Users/kamalbuqaileh/workspace/around_home/app/models/partner.rb"
+          },
+          {
+            "name": "SlidingCache"
+          }
+        ],
+        "method_type": "class",
+        "visibility": "public"
+      },
+      {
+        "name": "match_partners",
+        "calls": [
+          {
+            "name": "ActiveRecord::Base"
+          },
+          {
+            "name": "Partner",
+            "file_path": "/Users/kamalbuqaileh/workspace/around_home/app/models/partner.rb"
+          },
+          {
+            "name": "SlidingCache"
+          }
+        ],
+        "method_type": "class",
+        "visibility": "public"
+      }
+    ],
+    "id": "10",
+    "position": {
+      "x": 0,
+      "y": 1500
+    },
+    "color": "#6ede87"
+  },
+  {
+    "label": "MaterialSerializer",
+    "class_type": "class",
+    "file_path": "/Users/kamalbuqaileh/workspace/around_home/app/serializers/material_serializer.rb",
+    "inheritance": null,
+    "includes": [
+      "JSONAPI::Serializer"
+    ],
+    "namespaces": [],
+    "namespace_chain": [
+      "MaterialSerializer"
+    ],
+    "methods": [],
+    "id": "11",
+    "position": {
+      "x": 0,
+      "y": 1650
+    },
+    "color": "#6ede87"
+  },
+  {
+    "label": "PartnerSerializers::DetailSerializer",
+    "class_type": "class",
+    "file_path": "/Users/kamalbuqaileh/workspace/around_home/app/serializers/partner_serializers/detail_serializer.rb",
+    "inheritance": null,
+    "includes": [
+      "JSONAPI::Serializer"
+    ],
+    "namespaces": [
+      {
+        "name": "PartnerSerializers",
+        "order": 1
+      }
+    ],
+    "namespace_chain": [
+      "PartnerSerializers",
+      "DetailSerializer"
+    ],
+    "methods": [],
+    "id": "12",
+    "position": {
+      "x": 0,
+      "y": 1800
+    },
+    "color": "#6ede87"
+  },
+  {
+    "label": "PartnerSerializers::MatchSerializer",
+    "class_type": "class",
+    "file_path": "/Users/kamalbuqaileh/workspace/around_home/app/serializers/partner_serializers/match_serializer.rb",
+    "inheritance": null,
+    "includes": [
+      "JSONAPI::Serializer"
+    ],
+    "namespaces": [
+      {
+        "name": "PartnerSerializers",
+        "order": 1
+      }
+    ],
+    "namespace_chain": [
+      "PartnerSerializers",
+      "MatchSerializer"
+    ],
+    "methods": [],
+    "id": "13",
+    "position": {
+      "x": 0,
+      "y": 1950
+    },
+    "color": "#6ede87"
+  },
+  {
+    "label": "ServiceSerializer",
+    "class_type": "class",
+    "file_path": "/Users/kamalbuqaileh/workspace/around_home/app/serializers/service_serializer.rb",
+    "inheritance": null,
+    "includes": [
+      "JSONAPI::Serializer"
+    ],
+    "namespaces": [],
+    "namespace_chain": [
+      "ServiceSerializer"
+    ],
+    "methods": [],
+    "id": "14",
+    "position": {
+      "x": 0,
+      "y": 2100
+    },
+    "color": "#6ede87"
+  },
+  {
+    "label": "FetchPartnerDetailsService",
+    "class_type": "class",
+    "file_path": "/Users/kamalbuqaileh/workspace/around_home/app/services/fetch_partner_details_service.rb",
+    "inheritance": null,
+    "includes": [],
+    "namespaces": [],
+    "namespace_chain": [
+      "FetchPartnerDetailsService"
+    ],
+    "methods": [
+      {
+        "name": "initialize",
+        "calls": [],
+        "method_type": "instance",
+        "visibility": "public"
+      },
+      {
+        "name": "call",
+        "calls": [
+          {
+            "name": "PartnerQueries",
+            "file_path": "/Users/kamalbuqaileh/workspace/around_home/app/queries/partner_queries.rb"
+          }
+        ],
+        "method_type": "instance",
+        "visibility": "public"
+      }
+    ],
+    "id": "15",
+    "position": {
+      "x": 0,
+      "y": 2250
+    },
+    "color": "#6ede87"
+  },
+  {
+    "label": "MatchPartnersService",
+    "class_type": "class",
+    "file_path": "/Users/kamalbuqaileh/workspace/around_home/app/services/match_partners_service.rb",
+    "inheritance": null,
+    "includes": [],
+    "namespaces": [],
+    "namespace_chain": [
+      "MatchPartnersService"
+    ],
+    "methods": [
+      {
+        "name": "initialize",
+        "calls": [],
+        "method_type": "instance",
+        "visibility": "public"
+      },
+      {
+        "name": "call",
+        "calls": [
+          {
+            "name": "PartnerQueries",
+            "file_path": "/Users/kamalbuqaileh/workspace/around_home/app/queries/partner_queries.rb"
+          }
+        ],
+        "method_type": "instance",
+        "visibility": "public"
+      }
+    ],
+    "id": "16",
+    "position": {
+      "x": 0,
+      "y": 2400
+    },
+    "color": "#6ede87"
+  },
+  {
+    "label": "AroundHome::Application",
+    "class_type": "class",
+    "file_path": "/Users/kamalbuqaileh/workspace/around_home/config/application.rb",
+    "inheritance": "< Rails::Application",
+    "includes": [],
+    "namespaces": [
+      {
+        "name": "AroundHome",
+        "order": 1
+      }
+    ],
+    "namespace_chain": [
+      "AroundHome",
+      "Application"
+    ],
+    "methods": [],
+    "id": "17",
+    "position": {
+      "x": 0,
+      "y": 2550
+    },
+    "color": "#6ede87"
+  },
+  {
+    "label": "CreatePartners",
+    "class_type": "class",
+    "file_path": "/Users/kamalbuqaileh/workspace/around_home/db/migrate/20250216103757_create_partners.rb",
+    "inheritance": "< ActiveRecord::Migration[8.0]",
+    "includes": [],
+    "namespaces": [],
+    "namespace_chain": [
+      "CreatePartners"
+    ],
+    "methods": [
+      {
+        "name": "change",
+        "calls": [],
+        "method_type": "instance",
+        "visibility": "public"
+      }
+    ],
+    "id": "18",
+    "position": {
+      "x": 0,
+      "y": 2700
+    },
+    "color": "#6ede87"
+  },
+  {
+    "label": "CreateServices",
+    "class_type": "class",
+    "file_path": "/Users/kamalbuqaileh/workspace/around_home/db/migrate/20250216112556_create_services.rb",
+    "inheritance": "< ActiveRecord::Migration[8.0]",
+    "includes": [],
+    "namespaces": [],
+    "namespace_chain": [
+      "CreateServices"
+    ],
+    "methods": [
+      {
+        "name": "change",
+        "calls": [],
+        "method_type": "instance",
+        "visibility": "public"
+      }
+    ],
+    "id": "19",
+    "position": {
+      "x": 0,
+      "y": 2850
+    },
+    "color": "#6ede87"
+  },
+  {
+    "label": "CreateMaterials",
+    "class_type": "class",
+    "file_path": "/Users/kamalbuqaileh/workspace/around_home/db/migrate/20250216112606_create_materials.rb",
+    "inheritance": "< ActiveRecord::Migration[8.0]",
+    "includes": [],
+    "namespaces": [],
+    "namespace_chain": [
+      "CreateMaterials"
+    ],
+    "methods": [
+      {
+        "name": "change",
+        "calls": [],
+        "method_type": "instance",
+        "visibility": "public"
+      }
+    ],
+    "id": "20",
+    "position": {
+      "x": 0,
+      "y": 3000
+    },
+    "color": "#6ede87"
+  },
+  {
+    "label": "CreatePartnerServices",
+    "class_type": "class",
+    "file_path": "/Users/kamalbuqaileh/workspace/around_home/db/migrate/20250216112623_create_partner_services.rb",
+    "inheritance": "< ActiveRecord::Migration[8.0]",
+    "includes": [],
+    "namespaces": [],
+    "namespace_chain": [
+      "CreatePartnerServices"
+    ],
+    "methods": [
+      {
+        "name": "change",
+        "calls": [],
+        "method_type": "instance",
+        "visibility": "public"
+      }
+    ],
+    "id": "21",
+    "position": {
+      "x": 0,
+      "y": 3150
+    },
+    "color": "#6ede87"
+  },
+  {
+    "label": "CreateServiceMaterials",
+    "class_type": "class",
+    "file_path": "/Users/kamalbuqaileh/workspace/around_home/db/migrate/20250216112645_create_service_materials.rb",
+    "inheritance": "< ActiveRecord::Migration[8.0]",
+    "includes": [],
+    "namespaces": [],
+    "namespace_chain": [
+      "CreateServiceMaterials"
+    ],
+    "methods": [
+      {
+        "name": "change",
+        "calls": [],
+        "method_type": "instance",
+        "visibility": "public"
+      }
+    ],
+    "id": "22",
+    "position": {
+      "x": 0,
+      "y": 3300
+    },
+    "color": "#6ede87"
+  }
+]

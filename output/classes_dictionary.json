@@ -1,0 +1,95 @@
+{
+  "/Users/kamalbuqaileh/workspace/around_home/app/controllers/api/v1/partners_controller.rb": [
+    "Api::V1::PartnersController",
+    "V1::PartnersController",
+    "PartnersController",
+    "::PartnersController"
+  ],
+  "/Users/kamalbuqaileh/workspace/around_home/app/controllers/application_controller.rb": [
+    "ApplicationController",
+    "::ApplicationController"
+  ],
+  "/Users/kamalbuqaileh/workspace/around_home/app/mailers/application_mailer.rb": [
+    "ApplicationMailer",
+    "::ApplicationMailer"
+  ],
+  "/Users/kamalbuqaileh/workspace/around_home/app/models/application_record.rb": [
+    "ApplicationRecord",
+    "::ApplicationRecord"
+  ],
+  "/Users/kamalbuqaileh/workspace/around_home/app/models/material.rb": [
+    "Material",
+    "::Material"
+  ],
+  "/Users/kamalbuqaileh/workspace/around_home/app/models/partner.rb": [
+    "Partner",
+    "::Partner"
+  ],
+  "/Users/kamalbuqaileh/workspace/around_home/app/models/partner_service.rb": [
+    "PartnerService",
+    "::PartnerService"
+  ],
+  "/Users/kamalbuqaileh/workspace/around_home/app/models/service.rb": [
+    "Service",
+    "::Service"
+  ],
+  "/Users/kamalbuqaileh/workspace/around_home/app/models/service_material.rb": [
+    "ServiceMaterial",
+    "::ServiceMaterial"
+  ],
+  "/Users/kamalbuqaileh/workspace/around_home/app/queries/partner_queries.rb": [
+    "PartnerQueries",
+    "::PartnerQueries"
+  ],
+  "/Users/kamalbuqaileh/workspace/around_home/app/serializers/material_serializer.rb": [
+    "MaterialSerializer",
+    "::MaterialSerializer"
+  ],
+  "/Users/kamalbuqaileh/workspace/around_home/app/serializers/partner_serializers/detail_serializer.rb": [
+    "PartnerSerializers::DetailSerializer",
+    "DetailSerializer",
+    "::DetailSerializer"
+  ],
+  "/Users/kamalbuqaileh/workspace/around_home/app/serializers/partner_serializers/match_serializer.rb": [
+    "PartnerSerializers::MatchSerializer",
+    "MatchSerializer",
+    "::MatchSerializer"
+  ],
+  "/Users/kamalbuqaileh/workspace/around_home/app/serializers/service_serializer.rb": [
+    "ServiceSerializer",
+    "::ServiceSerializer"
+  ],
+  "/Users/kamalbuqaileh/workspace/around_home/app/services/fetch_partner_details_service.rb": [
+    "FetchPartnerDetailsService",
+    "::FetchPartnerDetailsService"
+  ],
+  "/Users/kamalbuqaileh/workspace/around_home/app/services/match_partners_service.rb": [
+    "MatchPartnersService",
+    "::MatchPartnersService"
+  ],
+  "/Users/kamalbuqaileh/workspace/around_home/config/application.rb": [
+    "AroundHome::Application",
+    "Application",
+    "::Application"
+  ],
+  "/Users/kamalbuqaileh/workspace/around_home/db/migrate/20250216103757_create_partners.rb": [
+    "CreatePartners",
+    "::CreatePartners"
+  ],
+  "/Users/kamalbuqaileh/workspace/around_home/db/migrate/20250216112556_create_services.rb": [
+    "CreateServices",
+    "::CreateServices"
+  ],
+  "/Users/kamalbuqaileh/workspace/around_home/db/migrate/20250216112606_create_materials.rb": [
+    "CreateMaterials",
+    "::CreateMaterials"
+  ],
+  "/Users/kamalbuqaileh/workspace/around_home/db/migrate/20250216112623_create_partner_services.rb": [
+    "CreatePartnerServices",
+    "::CreatePartnerServices"
+  ],
+  "/Users/kamalbuqaileh/workspace/around_home/db/migrate/20250216112645_create_service_materials.rb": [
+    "CreateServiceMaterials",
+    "::CreateServiceMaterials"
+  ]
+}
